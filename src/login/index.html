@@ -9,11 +9,26 @@
 </head>
 <body>
     <div class="formulario">
-        <div clas="bolax">
-            <img class="logo" src="../../public/" alt="logo">
+        <div clas="round">
+            <img class="logo" src="../../public/login.jpg" alt="logo">
         </div>
+        <div class="wrap-input-label">
+            <label for="nome"></label>
+            <input type="text" id="nome" placeholder="Insira seu nome">
+        </div>
+        <div class="wrap-input-label">
+            <label for="senha"></label>
+            <input type="password" id="senha" placeholder="Insira sua senha">
+            <div onclick="showPassword()">
+                <img src="../../public/open-eye.png" alt="senha" id="eye" class="eye" width="25px">
+            </div>
+        </div>
+        <button class="btn-button" onclick="login()">Login</button>
     </div>
-
+    <div class="error-div" id="error-modal">
+        <h3>Credenciais incorretas</h3>
+        <button onclick="closeError()">❌</button>
+    </div>
     <script src="script.js"></script>
 </body>
 </html>
