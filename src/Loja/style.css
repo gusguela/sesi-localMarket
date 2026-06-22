@@ -2,14 +2,13 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
 }
+
 body{
-    font-family: "Inter", sans-serif !important;
-    width: auto;
-    height: auto;
-    overflow-x: hidden;
-    padding: 20px;
+    padding: 10px;
 }
+
 .wrap{
     display: flex;
     flex-wrap: wrap;
@@ -17,12 +16,13 @@ body{
     align-items: center;
     width: 100%;
     height: auto;
-    padding: 5%;
+    padding: 20px;
 }
+
 .center{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    gap: 50px;
+    gap: 20px;
 }

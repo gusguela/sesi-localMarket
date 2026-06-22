@@ -1,6 +1,6 @@
 function login(){
+    // document.getElementById('nome').value
     var nome = $("#nome").val()
-    // var senha = document.getElementById("senha").value
     var senha = $("#senha").val()
 
     if(nome && senha && nome === "admin" && senha === "12345"){
@@ -9,18 +9,18 @@ function login(){
             dataEntrada: new Date(),
             id: Math.floor(Math.random() * 100000)
         }
-         localStorage.setItem("usuario", JSON.stringify(user)) 
-         window.location.href = "../Loja"  
+        localStorage.setItem("usuario", JSON.stringify(user))
+        window.location.href = "../Loja"
     }else{
         document.getElementById("error-modal").style.display = "flex"
-        document.getElementById("nome").style.border = "3px solid red"
-        document.getElementById("senha").style.border = "3px solid red"
+        document.getElementById("nome").style.borderBottom = "3px solid rgba(239, 108, 128, 0.832)"
+        document.getElementById("senha").style.borderBottom = "3px solid rgba(239, 108, 128, 0.832)"
     }
 }
 
 function showPassword(){
-    var inputSenha = document.querySelector("#senha")
-    var img_eye = document.querySelector("#eye")
+    var inputSenha = document.querySelector('#senha')
+    var img_eye = document.querySelector('#eye')
 
     if(inputSenha.getAttribute("type") === "password"){
         inputSenha.setAttribute("type", "text")
@@ -33,8 +33,6 @@ function showPassword(){
 
 function fecharError(){
     document.getElementById("error-modal").style.display = "none"
-    document.getElementById("nome").style.border = "2px solid black"
-    document.getElementById("senha").style.border = "2px solid black"
-    document.getElementById("senha").value = ""
+    document.getElementById("nome").style.borderBottom = "2px solid #090909"
+    document.getElementById("senha").style.borderBottom = "2px solid #090909"
 }
-

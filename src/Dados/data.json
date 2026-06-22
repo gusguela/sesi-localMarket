@@ -1,20 +1,20 @@
 [
     {
         "id": 1,
-        "desc": "Matheus",
-        "imagem": "../../public/matheus.webp",
-        "sal": 10200.55
+        "desc": "Betoneira cinza",
+        "imagem": "../../public/betoCinza.jpg",
+        "valor": 400.00
     },
-    {
+      {
         "id": 2,
-        "desc": "Débora",
-        "imagem": "../../public/debora.avif",
-        "sal": 45000.90
+        "desc": "Betoneira Laranja",
+        "imagem": "../../public/betoLaranja.webp",
+        "valor": 450.00
     },
-    {
+      {
         "id": 3,
-        "desc": "João",
-        "imagem": "../../public/joao.jpg",
-        "sal": 500.00
+        "desc": "Betoneira Amarela",
+        "imagem": "../../public/betoAmarela.webp",
+        "valor": 620.00
     }
 ]
