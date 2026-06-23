@@ -13,24 +13,30 @@ $(document).ready(function() {
             const removeButton = $("<button>").text("❌").css("margin-left", "10px").click(function(){
                 removerItem(index)
             })
-
+            
             listItem.append(removeButton)
             listElement.append(listItem)
 
-
             totalPreco += item.preco
-            //appends filhos aqui
         })
-        totalElement.text('Total:$$(total.Preco.toFixed(2)}')
-    }
-    function removerItem(index){
-        
+        totalElement.text(`Total: $${totalPreco.toFixed(2)}`)
     }
 
-    //funcao de removerItem
+    function removerItem(index){
+        carrinho.splice(index, 3)
+        localStorage.setItem("carrinho", JSON.stringify(carrinho))
+        exibirCarrinho()
+    }
+    exibirCarrinho()
+function gerar(){
+    const listaElement = document.getElementById("lista")
+    const totalElement = document.getElementById("total")
+    const listaClone = listElement.cloneNode(true)
+    $(listaClone).find("button").remover()
+    const listaHtml = listaClone.innerHTML
+    const totalHtml = totalElement.innerHTML
+    const conteudoHTML = ``
+}
+    
 
 })
-
-//gerar word
-
-//success close
